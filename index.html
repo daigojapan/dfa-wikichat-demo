@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DFA Robotics - ロボット導入相談</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', sans-serif; background: #f8f9fa; }
+    header {
+      background: #fff;
+      padding: 16px 40px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+    }
+    header h1 { font-size: 20px; color: #222; font-weight: 700; }
+    header span { color: #e85d04; }
+    .hero {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white;
+      padding: 80px 40px;
+      text-align: center;
+    }
+    .hero h2 { font-size: 36px; margin-bottom: 16px; }
+    .hero p { font-size: 18px; color: #ccc; margin-bottom: 32px; }
+    .hero .cta {
+      background: #e85d04;
+      color: white;
+      padding: 14px 32px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .products {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .products h3 { font-size: 24px; margin-bottom: 32px; text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .card .icon { font-size: 32px; margin-bottom: 12px; }
+    .card h4 { font-size: 16px; margin-bottom: 8px; color: #222; }
+    .card p { font-size: 14px; color: #666; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DFA <span>Robotics</span></h1>
+  </header>
+
+  <div class="hero">
+    <h2>サービスロボットで<br>業務課題を解決</h2>
+    <p>配膳・清掃・搬送ロボットの導入支援。右下のチャットからご相談ください。</p>
+    <button class="cta">無料相談はこちら</button>
+  </div>
+
+  <div class="products">
+    <h3>取り扱いロボット</h3>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🍽️</div>
+        <h4>配膳ロボット</h4>
+        <p>BellaBot・KEENON T10など。飲食店・ホテルの人手不足を解消。160万円台〜</p>
+      </div>
+      <div class="card">
+        <div class="icon">🧹</div>
+        <h4>清掃ロボット</h4>
+        <p>PUDU CC1・Phantasなど。商業施設・介護施設の清掃業務を自動化。160万円台〜</p>
+      </div>
+      <div class="card">
+        <div class="icon">📦</div>
+        <h4>搬送ロボット</h4>
+        <p>KEENON S100など。工場・倉庫の物品搬送を効率化。300万円台〜</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DFA WikiChat -->
+  <script>
+    window.difyChatbotConfig = {
+      token: 'GPJGHWPTnzWoaSRh'
+    }
+  </script>
+  <script src="https://udify.app/embed.min.js" id="GPJGHWPTnzWoaSRh" defer></script>
+  <style>
+    #dify-chatbot-bubble-button {
+      background-color: #e85d04 !important;
+    }
+    #dify-chatbot-bubble-window {
+      width: 24rem !important;
+      height: 40rem !important;
+    }
+  </style>
+</body>
+</html>
